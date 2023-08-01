@@ -6,8 +6,8 @@ import torch.optim as optim
 import pickle
 from networks import *
 
-#device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-device = torch.device("cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+#device = torch.device("cpu")
 class a2c_agent(nn.Module):
     def __init__(self, state_dim, action_dim):
         super(a2c_agent, self).__init__()
